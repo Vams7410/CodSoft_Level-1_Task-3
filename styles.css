@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 400px;
+    margin-top: 30px;
+    background-color: #000;
+    border: 2px solid #000   ;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+}
+
+.header {
+    grid-column: span 4;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+.header img {
+    width: 100px; /* Adjust the size of the logo as needed */
+    vertical-align: middle;
+}
+
+.header h1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+
+.display {
+    grid-column: span 4;
+    text-align: right;
+    padding: 20px;
+    font-size: 32px;
+    background-color: #000;
+    border-bottom: 2px solid #000;
+    border-radius: 12px 12px 0 0;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #d0d0d0;
+}
+
+/* Colors for operation buttons */
+button.operator {
+    background-color: #FF8C00;
+    color: #000;
+}
+
+button.operator:hover {
+    background-color: #FFA07A;
+}
+
+button.operator:active {
+    background-color: #FF4500;
+}
+
+/* Colors for equals button */
+button.equals {
+    background-color: #fff;
+    color: #000;
+}
+
+button.equals:hover {
+    background-color: #FFca4a;
+}
+
+button.equals:active {
+    background-color: #FFca4a
+}
